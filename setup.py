@@ -26,7 +26,7 @@ setup(
     keywords='web zope plone authentication pas zope2',
     author='WebLion Group, Penn State',
     author_email='support@weblion.psu.edu',
-    url='http://plone.org/products/webserverauth',
+    url='https://github.com/collective/Products.WebServerAuth',
     license='GPL',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['Products'],
