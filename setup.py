@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'Products', 'WebServerAuth', 'version.txt')).read().strip()
+version = '1.7.2.dev0'
 if version.endswith('dev'):
     version = version[:-3]
 
