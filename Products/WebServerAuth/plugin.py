@@ -173,7 +173,8 @@ class MultiPlugin(BasePlugin):
                 return None
 
         login = request.environ.get(self.config[usernameHeaderKey])
-        if not login:
+        # (null) is when the user variable in apache 2.4 is copied in a header, and the user is not set (workaround against very complex apache configs)
+        if not login or login == '(null)':
             return None
         return {usernameKey: self._normalizedLoginName(login)}
 
