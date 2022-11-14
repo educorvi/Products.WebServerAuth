@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '10.7.5'
+version = '10.7.6.dev0'
 if version.endswith('dev'):
     version = version[:-3]
 
